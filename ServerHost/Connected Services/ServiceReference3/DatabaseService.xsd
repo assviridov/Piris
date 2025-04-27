@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/DomainService.DbContext" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/DomainService.DbContext" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfstore_positions">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="store_positions" nillable="true" type="tns:store_positions" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfstore_positions" nillable="true" type="tns:ArrayOfstore_positions" />
+  <xs:complexType name="store_positions">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="positionCurrency" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="positionName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="positionPrice" type="xs:float" />
+      <xs:element minOccurs="0" name="positionType" type="xs:int" />
+      <xs:element minOccurs="0" name="positionValue" type="xs:float" />
+      <xs:element minOccurs="0" name="priceCurrency" type="xs:float" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="store_positions" nillable="true" type="tns:store_positions" />
+  <xs:complexType name="store_users">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Id" type="xs:int" />
+      <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="userPassword" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="store_users" nillable="true" type="tns:store_users" />
+</xs:schema>

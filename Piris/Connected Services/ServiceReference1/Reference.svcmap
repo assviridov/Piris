@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" ID="304ce705-6d5a-4aa3-804e-831e9d99bb8e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49995/Impl/CentralBankService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="CentralBankService.disco" MetadataType="Disco" ID="3c04aa9b-defe-4454-a9b0-fa7c75dd5f1d" SourceId="1" SourceUrl="http://localhost:49995/Impl/CentralBankService.svc?disco" />
+    <MetadataFile FileName="CentralBankService.wsdl" MetadataType="Wsdl" ID="60102072-9815-4146-86d6-fe6130de0bce" SourceId="1" SourceUrl="http://localhost:49995/Impl/CentralBankService.svc?wsdl" />
+    <MetadataFile FileName="CentralBankService.xsd" MetadataType="Schema" ID="d9fc8bf7-4c55-499b-83b1-af9038ad3b39" SourceId="1" SourceUrl="http://localhost:49995/Impl/CentralBankService.svc?xsd=xsd2" />
+    <MetadataFile FileName="CentralBankService1.xsd" MetadataType="Schema" ID="b03b43f8-ae49-4fe9-ad5f-a4cc3974525a" SourceId="1" SourceUrl="http://localhost:49995/Impl/CentralBankService.svc?xsd=xsd1" />
+    <MetadataFile FileName="CentralBankService2.xsd" MetadataType="Schema" ID="0d5080c5-eca1-4abd-bc81-31633d3fcdf4" SourceId="1" SourceUrl="http://localhost:49995/Impl/CentralBankService.svc?xsd=xsd0" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="9985c92e-07ca-452e-b412-02649016d2a6" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:49995/Impl/AuthService.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="AuthService.xsd" MetadataType="Schema" ID="9ab0d23f-518f-4dcf-9d9a-2f0d9e61cd9d" SourceId="1" SourceUrl="http://localhost:49995/Impl/AuthService.svc?xsd=xsd1" />
+    <MetadataFile FileName="AuthService.wsdl" MetadataType="Wsdl" ID="31d34a18-0171-4df2-bb7b-73f067767207" SourceId="1" SourceUrl="http://localhost:49995/Impl/AuthService.svc?wsdl" />
+    <MetadataFile FileName="AuthService1.xsd" MetadataType="Schema" ID="24406f87-9e51-4947-a716-ecdef77d7629" SourceId="1" SourceUrl="http://localhost:49995/Impl/AuthService.svc?xsd=xsd2" />
+    <MetadataFile FileName="AuthService2.xsd" MetadataType="Schema" ID="0b956c7f-c06f-440c-88e1-461ed67621f6" SourceId="1" SourceUrl="http://localhost:49995/Impl/AuthService.svc?xsd=xsd0" />
+    <MetadataFile FileName="AuthService.disco" MetadataType="Disco" ID="4ebcfa9c-5d39-47e9-85f3-16a42c3533b7" SourceId="1" SourceUrl="http://localhost:49995/Impl/AuthService.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

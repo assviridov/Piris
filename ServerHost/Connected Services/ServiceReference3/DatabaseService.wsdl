@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tns="http://tempuri.org/" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" name="DatabaseService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost:49995/Impl/DatabaseService..svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost:49995/Impl/DatabaseService..svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost:49995/Impl/DatabaseService..svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/DomainService.DbContext" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IDatabaseService_GetPositions_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPositions" />
+  </wsdl:message>
+  <wsdl:message name="IDatabaseService_GetPositions_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPositionsResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDatabaseService_AddPosition_InputMessage">
+    <wsdl:part name="parameters" element="tns:AddPosition" />
+  </wsdl:message>
+  <wsdl:message name="IDatabaseService_AddPosition_OutputMessage">
+    <wsdl:part name="parameters" element="tns:AddPositionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDatabaseService_GetPositionById_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetPositionById" />
+  </wsdl:message>
+  <wsdl:message name="IDatabaseService_GetPositionById_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetPositionByIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDatabaseService_GetUserByUserName_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByUserName" />
+  </wsdl:message>
+  <wsdl:message name="IDatabaseService_GetUserByUserName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUserByUserNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDatabaseService_UpdatePosition_InputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePosition" />
+  </wsdl:message>
+  <wsdl:message name="IDatabaseService_UpdatePosition_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UpdatePositionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDatabaseService_DeletePosition_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePosition" />
+  </wsdl:message>
+  <wsdl:message name="IDatabaseService_DeletePosition_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeletePositionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IDatabaseService_CreateUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUser" />
+  </wsdl:message>
+  <wsdl:message name="IDatabaseService_CreateUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateUserResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IDatabaseService">
+    <wsdl:operation name="GetPositions">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDatabaseService/GetPositions" message="tns:IDatabaseService_GetPositions_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDatabaseService/GetPositionsResponse" message="tns:IDatabaseService_GetPositions_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="AddPosition">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDatabaseService/AddPosition" message="tns:IDatabaseService_AddPosition_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDatabaseService/AddPositionResponse" message="tns:IDatabaseService_AddPosition_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPositionById">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDatabaseService/GetPositionById" message="tns:IDatabaseService_GetPositionById_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDatabaseService/GetPositionByIdResponse" message="tns:IDatabaseService_GetPositionById_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByUserName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDatabaseService/GetUserByUserName" message="tns:IDatabaseService_GetUserByUserName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDatabaseService/GetUserByUserNameResponse" message="tns:IDatabaseService_GetUserByUserName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePosition">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDatabaseService/UpdatePosition" message="tns:IDatabaseService_UpdatePosition_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDatabaseService/UpdatePositionResponse" message="tns:IDatabaseService_UpdatePosition_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeletePosition">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDatabaseService/DeletePosition" message="tns:IDatabaseService_DeletePosition_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDatabaseService/DeletePositionResponse" message="tns:IDatabaseService_DeletePosition_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IDatabaseService/CreateUser" message="tns:IDatabaseService_CreateUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IDatabaseService/CreateUserResponse" message="tns:IDatabaseService_CreateUser_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IDatabaseService" type="tns:IDatabaseService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetPositions">
+      <soap:operation soapAction="http://tempuri.org/IDatabaseService/GetPositions" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddPosition">
+      <soap:operation soapAction="http://tempuri.org/IDatabaseService/AddPosition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPositionById">
+      <soap:operation soapAction="http://tempuri.org/IDatabaseService/GetPositionById" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserByUserName">
+      <soap:operation soapAction="http://tempuri.org/IDatabaseService/GetUserByUserName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdatePosition">
+      <soap:operation soapAction="http://tempuri.org/IDatabaseService/UpdatePosition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeletePosition">
+      <soap:operation soapAction="http://tempuri.org/IDatabaseService/DeletePosition" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateUser">
+      <soap:operation soapAction="http://tempuri.org/IDatabaseService/CreateUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="DatabaseService">
+    <wsdl:port name="BasicHttpBinding_IDatabaseService" binding="tns:BasicHttpBinding_IDatabaseService">
+      <soap:address location="http://localhost:49995/Impl/DatabaseService..svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
